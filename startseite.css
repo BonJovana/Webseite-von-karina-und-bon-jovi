@@ -1,0 +1,54 @@
+.Header_content{
+    align-items: center;
+    height: 100%;
+    max-width: 1730px;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+div{
+    display: block;
+}
+
+.Main__content {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.Main__content {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+.Block--paddingBottomXlarge {
+    padding-bottom: 75px;
+}
+.Block--paddingTopXlarge {
+    padding-top: 75px;
+}
+.Block--wasVisible {
+    opacity: 1;
+}
+.Block{
+    margin-bottom: 0;
+    opacity: 0;
+    transition: opacity .28s cubic-bezier(.23,1,.32,1);
+    will-change: opacity;
+    position: relative;
+    overflow: hidden;
+}
+.Block {
+    padding-left: 15px;
+    padding-right: 15px;
+}
