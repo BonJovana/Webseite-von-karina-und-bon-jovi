@@ -1,3 +1,27 @@
+body {
+    background-color: transparent;
+}
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+.Header {
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    will-change: transform,opacity,background-color;
+    z-index: 101;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    transform: translateZ(0);
+    background-color: transparent;
+    transition: opacity .25s cubic-bezier(.23,1,.32,1),background-color .25s cubic-bezier(.23,1,.32,1);
+    opacity: 0;
+}
+
 .Header_content{
     align-items: center;
     height: 100%;
