@@ -31,9 +31,33 @@ body, html {
     margin: 0 auto;
 }
 
+.Header_list{
+   padding-right: auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+.Header_about{
+    background-color: goldenrod;
+    width: 100%;
+    
+}
+
+.Header_work{
+    background-color: coral;
+    width: 100%;
+    
+}
+
+.Header_contact{
+    background-color: aquamarine;
+    width: 100%;
+    
+}
+
+
 .Header_Name{
     margin-left: auto;
-    padding-left: 30%;
+    padding-left: auto;
 }
 
 *{
@@ -43,21 +67,6 @@ body, html {
 div{
     display: block;
 }
-
-.Main__content {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-.Main__content {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-
-
-
-
-
 
 
 .Block--paddingBottomXlarge {
