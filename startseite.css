@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 body {
     background-color: transparent;
 }
@@ -7,19 +9,12 @@ body, html {
 }
 
 .Header {
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    will-change: transform,opacity,background-color;
-    z-index: 101;
-    width: 100%;
+    display:flex;
+    justify-content: space-between;
     align-items: center;
-    display: flex;
-    transform: translateZ(0);
-    background-color: transparent;
-    transition: opacity .25s cubic-bezier(.23,1,.32,1),background-color .25s cubic-bezier(.23,1,.32,1);
-    opacity: 1;
+    height: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .Header_content{
@@ -29,64 +24,67 @@ body, html {
     display: flex;
     width: 100%;
     margin: 0 auto;
+    order: 1;
+    font-size: 140%;
 }
 
-.Header_list{
-   padding-right: auto;
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-}
-.Header_about{
-    background-color: goldenrod;
-    width: 100%;
-    
+.Header_links{
+    list-style: none;
 }
 
-.Header_work{
-    background-color: coral;
-    width: 100%;
-    
+.header_links li{
+    display: inline-block;
+    padding: 50px 20px;
 }
 
-.Header_contact{
-    background-color: aquamarine;
-    width: 100%;
-    
+.header_links li:nth-child(1){
+    padding: 50px 20px 0 0;
 }
 
-
-.Header_Name{
+.Name{
+    order: 3;
     margin-left: auto;
-    padding-left: auto;
+    color: black;
 }
 
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Staatliches', cursive;
 }
 
 div{
     display: block;
 }
 
+.IntroVideo {
+    position: fixed;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(102, 140, 164);
+}
 
-.Block--paddingBottomXlarge {
-    padding-bottom: 75px;
-}
-.Block--paddingTopXlarge {
-    padding-top: 75px;
-}
-.Block--wasVisible {
+.IntroVideo__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate3d(-50%,-50%,0);
     opacity: 1;
+    display: block;
 }
-.Block{
-    margin-bottom: 0;
-    opacity: 0;
-    transition: opacity .28s cubic-bezier(.23,1,.32,1);
-    will-change: opacity;
-    position: relative;
-    overflow: hidden;
-}
-.Block {
-    padding-left: 15px;
-    padding-right: 15px;
+
+video {
+    object-fit: contain;
 }
