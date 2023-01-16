@@ -15,6 +15,7 @@ body, html {
     height: 80px;
     padding-left: 15px;
     padding-right: 15px;
+    background-color: white;
 }
 
 .Header_content{
@@ -59,7 +60,6 @@ div{
 }
 
 .IntroVideo {
-    position: fixed;
     right: 0;
     width: 100%;
     height: 100%;
@@ -69,7 +69,7 @@ div{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(102, 140, 164);
+    
 }
 
 .IntroVideo__video {
@@ -87,6 +87,11 @@ div{
 
 video {
     object-fit: contain;
+}
+
+#bg{
+    z-index: -1;
+    position: absolute;
 }
 
 .IntroName {
@@ -127,7 +132,7 @@ video {
     padding-top: 225px;
 }
 .Block--paddingBottomXlarge {
-    padding-bottom: 225px;
+    padding-bottom: 73px;
 }
 .Block--wasVisible {
     opacity: 1;
@@ -182,6 +187,7 @@ video {
     padding-left: 15px;
     padding-right: 15px;
     justify-content: center;
+    padding-bottom: 2%;
 }
 
 .Work_titel{
@@ -191,5 +197,94 @@ video {
 
 .Work_titel p{
     display: block;
+    font-size: 120px;
+}
+
+
+.Img_slider{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 1024px;
+    height: 730px;
+    margin: 0 auto;
+    
+}
+
+.Img_slider .slide{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.Img_slider .slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+}
+
+.Img_slider .slide img{
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    height: 730px;
+    border: 18px black solid;
+}
+
+.Img_slider .slide .info{
+    padding: 15px 30px;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    
+}
+
+.Img_slider .slide .info{
+    color: black;
     font-size: 45px;
+}
+
+.Img_slider .navigation{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    transform: translateX(-50%);
+    left: 50%
+}
+
+.Img_slider .navigation .btn{
+    background: rgba(255, 255, 255, 0.5);
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 2px black  solid;
+    cursor: pointer;
+}
+
+.Titel2{
+    display: flex;
+    max-width: 1730px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+    padding-bottom: 2%;
+    padding-top: 4%;
+    z-index: 3;
+}
+
+.Contact_titel{
+    display: flex;
+    
+}
+
+.Contact_titel p{
+    display: block;
+    font-size: 120px;
 }

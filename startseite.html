@@ -19,12 +19,11 @@
                 <p class="Name">Jovana Golijanin</p>   
             </div>
         </header>
-        <!--<div class="IntroVideo IntroVideo--loaded" style="opacity: 1;">
-            <video loop autoplay muted class="IntroVideo__video" src="https://player.vimeo.com/external/474628156.hd.mp4?s=4f65120da5af965c584722627f4045238e210145&profile_id=175" type="video/mp4">
-                <track kind="captions">
+        <div class="IntroVideo IntroVideo--loaded" style="opacity: 1;">
+            <video id="bg" loop autoplay muted class="IntroVideo__video" src="https://player.vimeo.com/external/474628156.hd.mp4?s=4f65120da5af965c584722627f4045238e210145&profile_id=175" type="video/mp4">
             </video>
             <div class="IntroVideo__more"></div>
-        </div>-->
+        </div>
         <div class="IntroName">
             <div clas="Intro_content">
                 <div class="Intro_name">
@@ -54,8 +53,33 @@
                 </div>
             </div>
             <div class="Img_slider">
+                <div class="slide active">
+                    <img src="pexels-anni-roenkae-2832432.jpg">
+                    <div class="info">
+                        <p>Work 1</p>
+                    </div>
+                </div>
                 <div class="slide">
-                    <img src="">
+                    <img src="pexels-harrison-candlin-2441454.jpg">
+                    <div class="info">
+                        <p>Work 2</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="pexels-photo-4175070.jpg">
+                    <div class="info">
+                        <p>Work 2</p>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <div class="btn active"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                </div>
+            </div>
+            <div class="Titel2">
+                <div class="Contact_titel">
+                    <p>Contact</p>
                 </div>
             </div>
             </main>            
@@ -69,13 +93,35 @@
           </address>
     </div>
 
+
+    <script type="text/javascript">
+        var slides = document.querySelectorAll('.slide')
+        var btns = document.querySelectorAll('.btn');
+        let currentSlide = 1;
+
+        var manualNav = function(manual){
+
+            slides.forEach((slide) => {
+                slide.classList.remove('active');
+
+                btns.forEach((btn) => {
+                    btn.classList.remove('active');
+                });
+            });
+
+            slides[manual].classList.add('active');
+            btns[manual].classList.add('active');
+        }
+
+        btns.forEach((btn,i) => {
+            btn.addEventListener("click", () =>{
+                manualNav(i)
+                currentSlide = i;
+            });
+        });
+
+    </script>
   </body>
   
 </html>
 
-
-//
-<div class="Footer">
-    <p>© Jovana Golijanin</p>
-    <a href="#contact.html" class="impressum">Impressum</a>
- </div>
