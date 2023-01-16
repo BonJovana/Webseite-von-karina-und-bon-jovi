@@ -175,152 +175,21 @@ video {
     margin-inline-end: 0px;
 }
 
-
-.IndexGrid {
-    padding-left: 7.5px;
-    padding-right: 7.5px;
-    margin-bottom: 60px;
-}
-
-.IndexGrid {
-    width: 100%;
-    position: relative;
-    z-index: 1;
-}
-
-.IndexGrid__container {
+.Titel1{
+    display: flex;
     max-width: 1730px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+}
+
+.Work_titel{
     display: flex;
-    flex-wrap: wrap;
+    
 }
 
-.IndexGridItem--c3 {
-    width: 37.5%;
-}
-
-.IndexGridItem {
+.Work_titel p{
     display: block;
-    overflow: hidden;
-    padding-left: 7.5px;
-    padding-right: 7.5px;
-    padding-bottom: 15px;
-}
-
-a {
-    text-decoration: none;
-}
-a, body {
-    color: #000;
-}
-a {
-    background-color: transparent;
-}
-
-.IndexGridItem__container {
-    position: relative;
-    height: 100%;
-    transition: transform .25s cubic-bezier(.23,1,.32,1);
-    transform: scaleX(1);
-    transform-origin: center;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    will-change: transform;
-}
-
-.IndexGridItem__content {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.IndexGridItem__content .Image {
-    height: 100%;
-    width: 100%;
-}
-
-.Image--hasFullsize {
-    cursor: pointer;
-}
-.Image {
-    margin: 0 auto;
-    position: relative;
-    height: 0;
-    display: block;
-    width: 100%;
-    border-radius: 2px;
-    overflow: hidden;
-}
-
-.IndexGridItem__content .Image__img {
-    -o-object-fit: cover;
-    object-fit: cover;
-}
-
-.Image__img--lazyloaded {
-    background-color: transparent;
-    background-image: none;
-    opacity: 1;
-}
-.Image__img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    opacity: .5;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-color: #efefef;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzgiIGhlaWdodD0iMzgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSI4LjA0MiUiIHkxPSIwJSIgeDI9IjY1LjY4MiUiIHkyPSIyMy44NjUlIiBpZD0iYSI+PHN0b3Agc3RvcC1jb2xvcj0iIzk5OSIgc3RvcC1vcGFjaXR5PSIwIiBvZmZzZXQ9IjAlIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzk5OSIgc3RvcC1vcGFjaXR5PSIuNjMxIiBvZmZzZXQ9IjYzLjE0NiUiLz48c3RvcCBzdG9wLWNvbG9yPSIjOTk5IiBvZmZzZXQ9IjEwMCUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMwLTkuOTQtOC4wNi0xOC0xOC0xOCIgc3Ryb2tlPSJ1cmwoI2EpIiBzdHJva2Utd2lkdGg9IjIiPjxhbmltYXRlVHJhbnNmb3JtIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIgdHlwZT0icm90YXRlIiBmcm9tPSIwIDE4IDE4IiB0bz0iMzYwIDE4IDE4IiBkdXI9IjAuOXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+PC9wYXRoPjxjaXJjbGUgZmlsbD0iIzk5OSIgY3g9IjM2IiBjeT0iMTgiIHI9IjEiPjxhbmltYXRlVHJhbnNmb3JtIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIgdHlwZT0icm90YXRlIiBmcm9tPSIwIDE4IDE4IiB0bz0iMzYwIDE4IDE4IiBkdXI9IjAuOXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+PC9jaXJjbGU+PC9nPjwvc3ZnPg==);
-    transform: translateZ(0);
-}
-
-img {
-    display: block;
-}
-img {
-    border-style: none;
-}
-img {
-    display: block;
-}
-
-.IndexGridItem__overlay {
-    opacity: 0;
-    background-color: rgba(0,0,0,.6);
-}
-
-.IndexGridItem__overlay {
-    opacity: 0;
-    background-color: rgba(0,0,0,.6);
-}
-
-.IndexGridItem__text {
-    font-size: 52px;
-    line-height: 48px;
-}
-.IndexGridItem__text {
-    height: 100%;
-    padding: 15px;
-    overflow: hidden;
-    font-family: SharpSansDispNo1-Black,system-ui,-apple-system,BlinkMacSystemFont,Avenir Next,Avenir,Segoe UI,Lucida Grande,Helvetica Neue,Helvetica,Fira Sans,Roboto,Noto,Droid Sans,Cantarell,Oxygen,Ubuntu,Franklin Gothic Medium,Century Gothic,Liberation Sans,sans-serif;
-    text-transform: uppercase;
-    letter-spacing: .025em;
-}
-
-.IndexGridItem__text {
-    font-size: 52px;
-    line-height: 48px;
-}
-.IndexGridItem__text {
-    height: 100%;
-    padding: 15px;
-    overflow: hidden;
-    font-family: SharpSansDispNo1-Black,system-ui,-apple-system,BlinkMacSystemFont,Avenir Next,Avenir,Segoe UI,Lucida Grande,Helvetica Neue,Helvetica,Fira Sans,Roboto,Noto,Droid Sans,Cantarell,Oxygen,Ubuntu,Franklin Gothic Medium,Century Gothic,Liberation Sans,sans-serif;
-    text-transform: uppercase;
-    letter-spacing: .025em;
+    font-size: 45px;
 }
