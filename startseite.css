@@ -183,7 +183,7 @@
         margin-inline-end: 0px;
     }
 
-    .Titel1{
+    .Titel1 {
         display: flex;
         max-width: 1730px;
         margin: 0 auto;
@@ -200,7 +200,7 @@
 
     .Work_titel p{
         display: block;
-        font-size: 120px;
+        font-size: 140px;
     }
 
 
@@ -289,7 +289,65 @@
 
     .Contact_titel p{
         display: block;
-        font-size: 120px;
+        font-size: 140px;
+    }
+
+    .Container {
+        align-items: center;
+        display: flex; 
+        margin: 0 auto;
+        max-width: 1730px;                
+        height: 100%;                 
+        width: 100%; 
+        margin-top: 100px;
+        justify-content:space-between;                
+    }
+    
+    .Container > div:first-child {                
+        display: flex;
+        flex-direction: column;        
+    }
+    
+    .Container > div:first-child > div {
+        flex: 1; 
+        overflow: auto;
+                              
+    }
+    
+    .Container > div:last-child {
+      display: flex;
+      justify-content: right;
+      float: right;
+    }
+    
+    .Titel{
+        font-size: 140px;
+    }
+    
+    .Titel_content{
+        padding-bottom: 80px;
+        
+    }
+    
+    
+    
+    .Img_box{
+        display: flex;
+        height: 628.917px;
+        object-fit: cover;
+        border: 18px #000;
+        stroke:#000;
+        border-width: 50px;
+        overflow:hidden;
+    
+    }
+    
+    
+    .Text{
+        font-size: 22px;
+        font-family: 'Inter', sans-serif;
+        letter-spacing: 5%;
+        line-height: 160.5%;
     }
 }
 
@@ -662,7 +720,7 @@
     }
 }
 
-@media screen and (min-width: 412px){
+@media screen and (max-width: 412px){
     
     body {
         background-color: transparent;
