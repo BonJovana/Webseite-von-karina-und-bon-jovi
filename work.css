@@ -99,12 +99,12 @@ a{
         min-height: 879px;
     }
     .Intro_name{
-        font-size: 50px;
+        font-size: 55px;
     }
     .Name{
         display: none;
     }
-    
+
 } 
 
 .Container {
@@ -161,4 +161,70 @@ a{
     font-family: 'Inter', sans-serif;
     letter-spacing: 5%;
     line-height: 160.5%;
+}
+
+@media (max-width: 414px){
+    .Container {
+        align-items: center;
+        display: flex; 
+        margin: auto;               
+        height: 100%;                 
+        width: 100%; 
+        margin-top: 100px;
+        flex-direction:column;               
+    }
+    .Titel{
+        font-size: 100px;
+    }
+    .Titel_content{
+        padding-bottom: 0;
+        
+    }
+    .Img_box{
+        display: flex;
+        height: 480px;
+        width: 390px;
+        object-fit: cover;
+        overflow:hidden;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    .Text{
+        font-size: 18px;
+        font-family: 'Inter', sans-serif;
+        letter-spacing: 5%;
+        line-height: 160.5%;
+    }
+    .Container > div:first-child > div {
+        align-items: center;
+        display: flex;
+        margin: 8%;    
+        flex-direction: column;                 
+    }
+    .Container > div:last-child {
+        display: flex;
+        justify-content: center;
+        
+      }
+}
+
+.Container2{
+    align-items: center;
+    display: flex; 
+    margin: 0 auto;
+    max-width: 1730px;                
+    height: 100%;                 
+    width: 100%; 
+    margin-top: 100px;
+    justify-content:center;
+    background-color: black;
+}
+.Work{
+    font-size: 140px;
+    color: white;
+}
+.Work_content{
+    display: flex;
+    padding-bottom: 80px;
+    
 }
