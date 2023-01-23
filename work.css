@@ -315,5 +315,78 @@ a{
         object-fit: cover;
         margin-left: 14px;
     }
+    .Work{
+        font-size: 100px;
+    }
 
+}
+
+.Container3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 0, 0);
+    padding: 20px 35px 0 35px;
+    flex-direction: column;
+}
+.contact_boxes{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: center;
+}
+.c1{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: none;
+    padding: 70px;
+}
+.contact_T{
+    display: flex;
+    font-size: 50px;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+}
+.text_T{
+    padding-top: 20%;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    letter-spacing: 5%;
+    line-height: 160.5%;
+    justify-content: first baseline;
+    font-size: 18px;
+}
+.line{
+    height: 10px;
+    width: 100%;
+    background-color:white;
+    border: 0 none;
+}
+.Contact_content{
+    display: flex;
+    padding-bottom: 50px;
+}
+.Contact{
+    font-size: 140px;
+    color: white;
+}
+
+@media (max-width: 414px){
+    .c1{
+        flex-direction: column;
+        padding: 70px;
+    }
+    .contact_T{
+        font-size: 40px;
+    }
+    .contact_boxes{
+        flex-direction: column;
+    }
+    .Contact{
+        font-size: 100px;
+    }
 }
