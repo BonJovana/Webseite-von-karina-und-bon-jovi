@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work</title>
     <link rel="stylesheet" href="work.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> <!--(1)Pfeile für den Slider aus Tutorial-->
     <script src="slider.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--(2)Tutorial von Youtube: https://www.youtube.com/watch?v=0kmFlBJIUkQ&ab_channel=ProMakerDev und Code: https://github.com/michalsnik/aos-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script><!--Tutorial siehe Kommentar(2)-->
   </head>
 
   <body>
     <header class="Header">
           <ul class="header_links">    
-              <li><a class="list" href="" style="text-decoration: none; " >about</a></li>
-              <li><a class="list" href="" style="text-decoration: none; " >work</a></li>
-              <li><a class="list" href="" style="text-decoration: none; " >contact</a></li>
+              <li><a class="list" href="" style="text-decoration: none;" >about</a></li>
+              <li><a class="list" href="" style="text-decoration: none;" >work</a></li>
+              <li><a class="list" href="" style="text-decoration: none;" >contact</a></li>
           </ul> 
           <p class="Name">Jovana Golijanin</p>   
   </header>
@@ -23,7 +25,7 @@
       </video>
       <p class="Intro_name">Jovana Golijanin</p>
   </div>
-  <div class="Container">
+  <div class="Container" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out"> <!--Tutorial siehe Kommentar(2)-->
     <div class="Div_text">
         <div class="Titel_content" >
           <p class="Titel">About me</p>
@@ -47,30 +49,30 @@
     </div>
   </div>
   <div class="Container2">
-    <div class="Work_content">
+    <div class="Work_content" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out"><!--Tutorial siehe Kommentar(2)-->
       <p class="Work">Work</p>
     </div>
-    <div class="wrapper">
+    <div class="wrapper"><!--Tutorial aus Kommentar(1)-->
       <i id="left" class="fa-solid fa-angle-left"></i>
       <div class="carousel">
-        <img src="_DSC1823-Bearbeitet.jpg" alt="img">
-        <img src="final querformat rückseite.png" alt="img">
-        <img src="portrait_light.png" alt="img">
-        <img src="styleframe 3.jpg" alt="img">
-        <img src="Monochrom Light Theme.png" alt="img">
-        <img src="aftermath 2.jpg" alt="img">
-        <img src="foto_parfüm.jpg" alt="img">
-        <img src="Frame 8 short.png" alt="img">
-        <img src="bibliothek.png" alt="img">
+        <img class="image" src="_DSC1823-Bearbeitet.jpg" alt="img">
+        <img class="image" src="final querformat rückseite.png" alt="img">
+        <img class="image" src="portrait_light.png" alt="img">
+        <img class="image" src="styleframe 3.jpg" alt="img">
+        <img class="image" src="Monochrom Light Theme.png" alt="img">
+        <img class="image" src="aftermath 2.jpg" alt="img">
+        <img class="image" src="foto_parfüm.jpg" alt="img">
+        <img class="image" src="Frame 8 short.png" alt="img">
+        <img class="image" src="bibliothek.png" alt="img">
       </div>
       <i id="right" class="fa-solid fa-angle-right"></i>
     </div>
   </div>
-  <div class="Container3">
-    <div class="Contact_content">
+  <div class="Container3" >
+    <div class="Contact_content" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out"><!--Tutorial siehe Kommentar(2)-->
       <p class="Contact">Contact</p>
     </div>
-    <div class="contact_boxes">
+    <div class="contact_boxes" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out"><!--Tutorial siehe Kommentar(2)-->
       <div class="c1">
         <hr class="line">
         <div class="contact_T">
@@ -102,16 +104,95 @@
           <p>Social Media</p>
         </div>
         <div class="text_T">
-          <p>Instagram<br><br>
-            Youtube<br><br>
-            Artstation
-          </p>
+          <p><a class="P" href="https://www.instagram.com/joan.the.artist/" style="text-decoration: none;">Instagram</a></p><br>
+          <p><a class="P" href="https://www.youtube.com/@jovanagolijanin8392/videos" style="text-decoration: none;">Youtube</a></p><br>
+          <p><a class="P" href="https://www.artstation.com/joantheartist" style="text-decoration: none;">Artstation</a></p>
         </div>
       </div>
     </div>
   </div>
   
+  
+  <script>
+    AOS.init(); //Tutorial siehe Kommentar(2)//
 
+    //(1)Tutorial und Code auf Youtube gefunden unter: https://www.youtube.com/watch?v=7HPsdVQhpRw&t=965s&ab_channel=CodingNepal
+    //(1)Seite für Code: https://www.codingnepalweb.com/draggable-image-slider-html-css-javascript/
+
+    const carousel = document.querySelector(".carousel"),
+    firstImg = carousel.querySelectorAll("img")[0],
+    arrowIcons = document.querySelectorAll(".wrapper i");
+
+    let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
+
+    const showHideIcons = () => {
+        // showing and hiding prev/next icon according to carousel scroll left value
+        let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
+        arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+        arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
+    }
+
+    arrowIcons.forEach(icon => {
+        icon.addEventListener("click", () => {
+            let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
+            // if clicked icon is left, reduce width value from the carousel scroll left else add to it
+            carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+            setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
+        });
+    });
+
+    const autoSlide = () => {
+        // if there is no image left to scroll then return from here
+        if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
+
+        positionDiff = Math.abs(positionDiff); // making positionDiff value to positive
+        let firstImgWidth = firstImg.clientWidth + 14;
+        // getting difference value that needs to add or reduce from carousel left to take middle img center
+        let valDifference = firstImgWidth - positionDiff;
+
+        if(carousel.scrollLeft > prevScrollLeft) { // if user is scrolling to the right
+            return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+        }
+        // if user is scrolling to the left
+        carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+    }
+
+    const dragStart = (e) => {
+        // updatating global variables value on mouse down event
+        isDragStart = true;
+        prevPageX = e.pageX || e.touches[0].pageX;
+        prevScrollLeft = carousel.scrollLeft;
+    }
+
+    const dragging = (e) => {
+        // scrolling images/carousel to left according to mouse pointer
+        if(!isDragStart) return;
+        e.preventDefault();
+        isDragging = true;
+        carousel.classList.add("dragging");
+        positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+        carousel.scrollLeft = prevScrollLeft - positionDiff;
+        showHideIcons();
+    }
+
+    const dragStop = () => {
+        isDragStart = false;
+        carousel.classList.remove("dragging");
+
+        if(!isDragging) return;
+        isDragging = false;
+        autoSlide();
+    }
+
+    carousel.addEventListener("mousedown", dragStart);
+    carousel.addEventListener("touchstart", dragStart);
+
+    document.addEventListener("mousemove", dragging);
+    carousel.addEventListener("touchmove", dragging);
+
+    document.addEventListener("mouseup", dragStop);
+    carousel.addEventListener("touchend", dragStop);
+  </script>
   </body>
   
 </html>
