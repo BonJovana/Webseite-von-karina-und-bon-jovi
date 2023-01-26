@@ -305,9 +305,6 @@ a{
     object-fit: cover;
     margin-left: 14px;
 }
-.carousel img:first-child{
-    margin-left: 0px;
-}
 
 
 
