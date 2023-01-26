@@ -23,7 +23,6 @@ a{
 .Intro{
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 110px 100px;
 }
 
@@ -425,6 +424,7 @@ a{
 }
 
 .footer{
+    padding-top: 50px;
     max-width: 1730px;
     margin: 0 auto;
     display: flex;
