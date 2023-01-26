@@ -155,7 +155,8 @@ a{
         width: 100%;
     }
     .titel{
-        font-size: 60px;
+        font-size: 100px;
+        text-align: center;
     }
     .description{
         font-size: 18px;
@@ -200,78 +201,35 @@ a{
     text-align: center;
     font-family: 'Inter', sans-serif;
 }
+.color> span{
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    inset: 0;
+    transition: 0.75s;
+}
 
 .dot1{
-    height: 150px;
-    width: 150px;
     background-color: #12141C;
-    border-radius: 50%;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 1px;
-    display: inline-block;
-    inset: 0;
-    transition: 0.75s;
 }
 .dot2{
-    height: 150px;
-    width: 150px;
     background-color: #3D3DA1;
-    border-radius: 50%;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 1px;
-    display: inline-block;
-    inset: 0;
-    transition: 0.75s;
 }
 .dot3{
-    height: 150px;
-    width: 150px;
     background-color: #F27DFF;
-    border-radius: 50%;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 1px;
-    display: inline-block;
-    inset: 0;
-    transition: 0.75s;
 }
 .dot4{
-    height: 150px;
-    width: 150px;
     background-color: #E5E5FF;
-    border-radius: 50%;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 1px;
-    display: inline-block;
-    inset: 0;
-    transition: 0.75s;
 }
 .dot5{
-    height: 150px;
-    width: 150px;
     background-color: #E5F2FF;
-    border-radius: 50%;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 1px;
-    display: inline-block;
-    inset: 0;
-    transition: 0.75s;
 }
 .dot6{
-    height: 150px;
-    width: 150px;
     background-color: #FFFFFF;
-    border-radius: 50%;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 1px;
-    display: inline-block;
-    inset: 0;
-    transition: 0.75s;
 }
 .color:hover .dot{
     transform: scale(1.2);
@@ -280,6 +238,39 @@ a{
     padding-top: 25px;
 }
 
+@media (max-width: 414px){
+    .about{
+        padding-left: 8%;
+        padding-right: 8%;
+        margin-top: 100px;
+    }
+    .about_titel{
+        font-size: 100px;
+        text-align: center;
+    }
+    .titel_text{
+        font-size: 18px;
+    }
+    .circle_colors{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .circle_colors > div{
+        flex:50%;
+    }
+    .dot{
+        width:100%;
+    }
+    .color{
+        padding-top:30px;
+        padding-bottom:30px;
+    }
+    .color> span{
+        width:100px;
+        height: 100px;
+    }
+
+}
 
 .images{
     display: flex;
@@ -305,6 +296,30 @@ a{
     padding-top: 50px;
 }
 
+@media (max-width: 414px){
+    .images{
+        flex-direction: column;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .images > img{
+        display: flex;
+        flex-direction: column;
+    }
+    .images_row{
+        display: flex;
+        flex-direction: column;
+        object-fit: cover;
+        width: 414px;
+        padding-top: 0px;
+    }
+    .images_row img{
+        width: 414px;
+        height: 300px;
+        padding-top: 30px;
+    }
+    
+}
 
 
 

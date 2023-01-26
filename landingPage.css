@@ -307,8 +307,6 @@ a{
 }
 
 
-
-
 @media (max-width: 414px){
     .Container{
         margin-bottom: 100px;
@@ -332,7 +330,7 @@ a{
     .Work{
         font-size: 100px;
     }
-
+    
 }
 
 .Container3{
