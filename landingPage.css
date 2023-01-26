@@ -185,7 +185,9 @@ a{
 .Img_box:hover .Img_woo{
     transform: scale(1.2);
 }
-
+.Text1{
+    font-size: 28px;
+}
 
 .Text{
     font-size: 22px;
@@ -516,5 +518,53 @@ a{
     .footer_footer{
         padding-left: 8%;
         padding-right: 8%;
+    }
+}
+
+@media (max-width: 1536px){
+    .Intro{
+        display: flex;
+        flex-direction: column;
+        padding: 13px 100px;
+    }
+    .Intro_name{
+        font-size: 200px;
+    }
+    .Container{
+        max-width: 1150px;
+    }
+    .Titel{
+        font-size: 120px;
+    }
+    .Text1{
+        font-size: 25px;
+    }
+    .Text{
+        font-size: 18px;
+    }
+    .Img_box{
+        height: 540.917px
+    }
+    .Work{
+        font-size: 120px;
+    }
+    .wrapper{
+        max-width: 1150px;
+    }
+    .image{
+        height: 350px;
+        width: 350px;
+    }
+    .Contact_content{
+        justify-content: center;
+    }
+    .Contact{
+        font-size: 120px;
+    }
+    .contact_T{
+        font-size: 50px;
+    }
+    .footer{
+        max-width: 1150px;
     }
 }
