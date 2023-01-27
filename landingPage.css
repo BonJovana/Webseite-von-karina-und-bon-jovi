@@ -390,6 +390,7 @@ a{
         display: flex;
         flex-direction: column;
         padding: 13px 100px;
+        min-height: 105vh;
     }
     .Intro_name{
         font-size: 200px;
