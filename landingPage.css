@@ -26,23 +26,7 @@ a{
     padding: 110px 100px;
 }
 
-@media (max-width: 600px){
-    .Intro{
-        padding: 125px 30px;
-    }
-}
 
-@media (max-width: 700px){
-    
-    .Header{
-        flex-direction: column;
-
-    }
-
-    Header .header_links li{
-        margin: 0 7px;
-    }
-}
 
 .Header{
     position: fixed;
@@ -114,21 +98,7 @@ a{
     color: white;
 }
 
-@media (max-width: 414px){ /*max-height 879px*/
-    .Intro{
-        min-height: 879px;
-    }
-    .Intro_name{
-        font-size: 55px;
-    }
-    .Name{
-        display: none;
-    }
-    .Header{
-        padding: 28px 100px 0;
-        height: 80px;
-    }
-} 
+
 
 .Container {
     align-items: center;
@@ -196,50 +166,7 @@ a{
     line-height: 160.5%;
 }
 
-@media (max-width: 414px){
-    .Container {
-        align-items: center;
-        display: flex; 
-        margin: auto;               
-        height: 100%;                 
-        width: 100%; 
-        margin-top: 100px;
-        flex-direction:column;               
-    }
-    .Titel{
-        font-size: 100px;
-    }
-    .Titel_content{
-        padding-bottom: 0;
-        
-    }
-    .Img_box{
-        display: flex;
-        height: 480px;
-        width: 390px;
-        object-fit: cover;
-        overflow:hidden;
-        padding-left: 8%;
-        padding-right: 8%;
-    }
-    .Text{
-        font-size: 18px;
-        font-family: 'Inter', sans-serif;
-        letter-spacing: 5%;
-        line-height: 160.5%;
-    }
-    .Container > div:first-child > div {
-        align-items: center;
-        display: flex;
-        margin: 8%;    
-        flex-direction: column;                 
-    }
-    .Container > div:last-child {
-        display: flex;
-        justify-content: center;
-        
-      }
-}
+
 
 .Work{
     font-size: 140px;
@@ -308,31 +235,7 @@ a{
 }
 
 
-@media (max-width: 414px){
-    .Container{
-        margin-bottom: 100px;
-    }
-    .wrapper .carousel{
-        white-space: nowrap;
-        font-size: 0px;
-        cursor: pointer;
-        overflow: hidden;
-     }
-     .wrapper{
-        max-width: 300px;
-        position: relative;
-    }
-    .carousel img{
-        height: 300px;
-        width: 300px;
-        object-fit: cover;
-        margin-left: 14px;
-    }
-    .Work{
-        font-size: 100px;
-    }
-    
-}
+
 
 .Container3{
     display: flex;
@@ -409,21 +312,7 @@ a{
     transform: scaleX(1);
   }
 
-@media (max-width: 414px){
-    .c1{
-        flex-direction: column;
-        padding: 70px;
-    }
-    .contact_T{
-        font-size: 40px;
-    }
-    .contact_boxes{
-        flex-direction: column;
-    }
-    .Contact{
-        font-size: 100px;
-    }
-}
+
 
 .footer{
     padding-top: 50px;
@@ -490,37 +379,6 @@ a{
     padding:30px 0;
 }
 
-@media (max-width: 414px){
-
-    .footer_name{
-        padding-left: 8%;
-        padding-right: 8%;
-        margin-bottom: 0px;
-    }
-    .footer_content{
-        flex-direction: column;
-        padding-top: 8%;
-        padding-left: 8%;
-        padding-right: 8%;
-    }
-    .footer_address{
-        width:100%;
-    }
-    .footer_contact{
-        padding-top: 4%;
-        width:100%;
-    }
-    .footer_social{
-        padding-top: 4%;
-        width: 100%;
-        text-align: left;
-    }
-    .footer_footer{
-        padding-left: 8%;
-        padding-right: 8%;
-    }
-}
-
 @media (max-width: 1536px){
     .Intro{
         display: flex;
@@ -568,3 +426,155 @@ a{
         max-width: 1150px;
     }
 }
+
+@media (max-width: 600px){
+    .Intro{
+        padding: 125px 30px;
+    }
+}
+
+@media (max-width: 700px){
+    
+    .Header{
+        flex-direction: column;
+
+    }
+
+    Header .header_links li{
+        margin: 0 7px;
+    }
+}
+
+@media (max-width: 414px){ /*max-height 879px*/
+    .Intro{
+        min-height: 879px;
+    }
+    .Intro_name{
+        font-size: 55px;
+    }
+    .Name{
+        display: none;
+    }
+    .Header{
+        padding: 28px 100px 0;
+        height: 80px;
+    }
+} 
+
+@media (max-width: 414px){
+    .Container {
+        align-items: center;
+        display: flex; 
+        margin: auto;               
+        height: 100%;                 
+        width: 100%; 
+        margin-top: 100px;
+        flex-direction:column;               
+    }
+    .Titel{
+        font-size: 100px;
+    }
+    .Titel_content{
+        padding-bottom: 0;
+        
+    }
+    .Img_box{
+        display: flex;
+        height: 480px;
+        width: 390px;
+        object-fit: cover;
+        overflow:hidden;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    .Text{
+        font-size: 18px;
+        font-family: 'Inter', sans-serif;
+        letter-spacing: 5%;
+        line-height: 160.5%;
+    }
+    .Container > div:first-child > div {
+        align-items: center;
+        display: flex;
+        margin: 8%;    
+        flex-direction: column;                 
+    }
+    .Container > div:last-child {
+        display: flex;
+        justify-content: center;
+        
+      }
+}
+
+@media (max-width: 414px){
+    .Container{
+        margin-bottom: 100px;
+    }
+    .wrapper .carousel{
+        white-space: nowrap;
+        font-size: 0px;
+        cursor: pointer;
+        overflow: hidden;
+     }
+     .wrapper{
+        max-width: 300px;
+        position: relative;
+    }
+    .carousel img{
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        margin-left: 14px;
+    }
+    .Work{
+        font-size: 100px;
+    }  
+}
+
+@media (max-width: 414px){
+    .c1{
+        flex-direction: column;
+        padding: 70px;
+    }
+    .contact_T{
+        font-size: 40px;
+    }
+    .contact_boxes{
+        flex-direction: column;
+    }
+    .Contact{
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 414px){
+
+    .footer_name{
+        padding-left: 8%;
+        padding-right: 8%;
+        margin-bottom: 0px;
+    }
+    .footer_content{
+        flex-direction: column;
+        padding-top: 8%;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    .footer_address{
+        width:100%;
+    }
+    .footer_contact{
+        padding-top: 4%;
+        width:100%;
+    }
+    .footer_social{
+        padding-top: 4%;
+        width: 100%;
+        text-align: left;
+    }
+    .footer_footer{
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
+
