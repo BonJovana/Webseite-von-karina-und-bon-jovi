@@ -1,0 +1,12 @@
+Kurzdokumentation zur Portfolio Seite und Wordpress Shop
+
+
+Jovana Golijanin	Matrikelnr.:35203
+Karina Gulyas	Matrikelnr.:
+
+Verwendeter Editor: Visual Studio Code
+Verwendeter Browser: Google Chrome
+
+Gewünschte Gewichtung der Projekte: HTML(%) - Wordpress(%)
+
+
