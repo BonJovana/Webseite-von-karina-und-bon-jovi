@@ -283,7 +283,7 @@ a{
     }
     .img_start{
         height: 650px;
-        width: 700px;
+        width: 1040px;
     }
     .description{
         font-size: 22px;
@@ -301,9 +301,12 @@ a{
         width: 80px;
         height: 80px;
     }
+    .images{
+        max-width: 1150px;
+    }
     .images img{
-        height: 490px;
-        width: 760px
+        height: 415px;
+        width: 580px
     }
     .footer{
         max-width: 1150px;
