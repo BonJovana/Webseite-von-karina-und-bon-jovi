@@ -32,8 +32,6 @@ a{
     padding: 110px 100px;
 }
 
-
-
 .Header{
     position: fixed;
     top: 0;
@@ -104,8 +102,6 @@ a{
     color: white;
 }
 
-
-
 .Container {
     align-items: center;
     display: flex; 
@@ -172,8 +168,6 @@ a{
     line-height: 160.5%;
 }
 
-
-
 .Work{
     font-size: 140px;
     color: white;
@@ -239,9 +233,6 @@ a{
     object-fit: cover;
     margin-left: 14px;
 }
-
-
-
 
 .Container3{
     display: flex;
@@ -316,9 +307,7 @@ a{
 .P:hover:before {
     visibility: visible;
     transform: scaleX(1);
-  }
-
-
+}
 
 .footer{
     padding-top: 50px;
@@ -466,9 +455,6 @@ a{
         padding: 28px 100px 0;
         height: 80px;
     }
-} 
-
-@media (max-width: 414px){
     .Container {
         align-items: center;
         display: flex; 
@@ -510,10 +496,7 @@ a{
         display: flex;
         justify-content: center;
         
-      }
-}
-
-@media (max-width: 414px){
+    }
     .Container{
         margin-bottom: 100px;
     }
@@ -535,10 +518,7 @@ a{
     }
     .Work{
         font-size: 100px;
-    }  
-}
-
-@media (max-width: 414px){
+    } 
     .c1{
         flex-direction: column;
         padding: 70px;
@@ -552,10 +532,6 @@ a{
     .Contact{
         font-size: 100px;
     }
-}
-
-@media (max-width: 414px){
-
     .footer_name{
         padding-left: 8%;
         padding-right: 8%;
@@ -582,6 +558,6 @@ a{
     .footer_footer{
         padding-left: 8%;
         padding-right: 8%;
-    }
-}
+    } 
+} 
 
