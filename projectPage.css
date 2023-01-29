@@ -156,7 +156,6 @@ a{
     border-style: solid;
     border-width: 1px;
     display: inline-block;
-    inset: 0;
     transition: 0.75s;
 }
 
